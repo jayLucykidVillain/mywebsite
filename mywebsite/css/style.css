@@ -1,0 +1,179 @@
+/* style.css */
+
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;1,100;1,200&family=Roboto:wght@100&display=swap");
+
+* {
+  font-family: "Montserrat";
+}
+
+h1 {
+  color: #ea1179;
+  font-size: 3rem;
+}
+
+/* refer to artist i like 4x4 for classing/editing h1-h6 tags instead of all throughout the body */
+
+h6 {
+  font-style: italic;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: #fb2576;
+}
+
+
+ ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ffadbc;  /* background color of whole nav bar  */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  
+}
+
+li {
+  float: left;
+  border-right: 1px solid #dedede;  /* dedede is margin border color */
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #c78390;  /*turns to a darker shade of nav bar background color -darker pink- upon hovering over link */
+}
+
+/* li a:hover:not(.active) {
+  background-color: #ffadbc;
+}  */
+
+.active {
+  background-color: #99656f; /*current active page link color -even darker shade of pink than when hovering over link-*/
+} 
+
+
+.body_styles {
+  background-color: #ecf2ff;
+}
+
+.body_wrapper {
+  width: min(100% - 2rem, 1200px);
+  margin-inline: auto;
+}
+
+.body_container {
+  display: grid;
+  grid-template-areas:
+    "header header header header header"
+    "main main main main main"
+    "main main main main main"
+    "footer footer footer footer footer";
+  min-height: 100vh;
+  margin-top: 4rem;
+  gap: 1rem;
+  max-width: 1024px;
+}
+
+.grid-item {
+  padding: 1rem;
+}
+
+.header {
+  grid-area: header;
+  border-radius: 20px;
+  border: 6px solid #ffadbc;
+  padding: 1rem;
+  background-color: #a3c7d6;
+  outline: #03506f solid 7px;
+  box-shadow: 10px 10px 5px #b2b2b2;
+}
+
+.main {
+  grid-area: main;
+}
+
+.footer {
+  grid-area: footer;
+  margin-top: 1rem;
+  text-align: center;
+  border: 1px hidden;
+  padding: 1.5rem;
+}
+
+.input_styles {
+  border-radius: 7px;
+  border: 2px solid #a3c7d6;
+  padding: 0.7rem;
+  transition: all 0.5s ease-out;
+}
+
+.input_styles::placeholder {
+  font-style: italic;
+  font-variant: small-caps;
+}
+
+.input_styles:focus {
+  border-color: #ea1179;
+  transition: all 0.5s ease-out;
+  color: #ea1179; 
+}
+
+.irashai {
+  text-align: center;
+}
+
+.about_me {
+  margin: auto;
+  border-radius: 12px;
+  border: 4px solid #ffadbc;
+  padding: 1rem;
+  background-color: #a3c7d6;
+  box-shadow: 10px 10px 5px #b2b2b2;
+}
+
+.blogging {
+  margin: auto;
+  border-radius: 12px;
+  border: 4px solid #ffadbc;
+  padding: 1rem;
+  background-color: #a3c7d6;
+  box-shadow: 10px 10px 5px #b2b2b2;
+}
+
+
+
+/* @media queries to be left at very end */
+
+/* tablet */
+@media (max-width: 768px) {
+  .body_container {
+    grid-template-areas:
+      "header header header header"
+      "main main main main"
+      "main main main main"
+      "footer footer footer footer";
+  }
+}
+
+
+/* large desktop */
+@media (max-width: 1200px) {
+  .body_container {
+    grid-template-areas:
+      "header header header header header header"
+      "main main main main main main"
+      "main main main main main main"
+      "footer footer footer footer footer footer";
+  }
+}
+
