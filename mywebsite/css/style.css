@@ -12,8 +12,6 @@ h1 {
   font-size: 3rem;
 }
 
-/* refer to artist i like 4x4 for classing/editing h1-h6 tags instead of all throughout the body */
-
 h6 {
   font-style: italic;
 }
@@ -50,7 +48,7 @@ li a {
 }
 
 li a:hover {
-  background-color: #c78390;  /*turns to a darker shade of nav bar background color -darker pink- upon hovering over link */
+  background-color: #c78390;  /* turns to a darker shade of nav bar background color -darker pink- upon hovering over link */
 }
 
 /* li a:hover:not(.active) {
@@ -58,7 +56,7 @@ li a:hover {
 }  */
 
 .active {
-  background-color: #99656f; /*current active page link color -even darker shade of pink than when hovering over link-*/
+  background-color: #99656f; /* current active page link color -even darker shade of pink than when hovering over link- */
 } 
 
 
